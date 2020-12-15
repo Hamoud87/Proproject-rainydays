@@ -1,3 +1,3 @@
-# Proproject-rainydays
+# Project-rainydays
 
 Will continue to build the website
