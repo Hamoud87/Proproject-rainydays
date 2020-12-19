@@ -110,7 +110,7 @@ label::after {
 }
 /* Product Show Page */
 
-main {
+/main {
   display: flex;
   gap: 10px;
 
