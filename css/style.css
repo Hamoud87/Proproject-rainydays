@@ -1,5 +1,5 @@
 body {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0px;
 }
 
@@ -9,18 +9,21 @@ header {
 .top-header {
   box-shadow: 0px 2px #81f8b8;
 }
+.rainydays_logo {
+  max-width: 100px;
+}
 
 nav li {
   display: inline-block;
   font-family: Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 nav a {
   color: #73a09c;
   text-decoration: none;
-  padding: 50px;
+  padding: 20px;
 }
 nav a:hover {
   text-decoration: underline;
@@ -39,12 +42,14 @@ h1 {
 }
 
 .cta-button {
+  width: 80px;
   background-color: #0367a6;
   border-radius: 20px;
+  border: white;
   color: white;
-  padding: 8px;
+  padding: 10px;
   text-decoration: none;
-  margin: 150px;
+  margin: 20px auto;
 }
 
 .delivery--s {
@@ -52,25 +57,23 @@ h1 {
 }
 
 .featured {
-  display: flex;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-evenly;
 }
 .featured-products {
   margin: 10px;
-  background-color: lightblue;
+  background-color: #f2f2f2;
+  border-radius: 10px 10px;
+  box-shadow: 2px 2px #81f8b8;
 }
 .featured-products-info {
   display: grid;
   grid-template-columns: 85% 30%;
-  background-color: lightblue;
-  border-radius: 0px 0px 10px 10px;
-  margin-top: 0px;
-  border: solid lightgray;
 }
 .featured-products-info-col {
   margin: 0%;
-  padding: 5px;
+  padding-left: 5px;
 }
 
 .image1 {
@@ -119,7 +122,7 @@ footer h2 {
 /* Product specific Page */
 .pro-display {
   display: flex;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 50px 50px;
 }
 .pro-display > * {
@@ -134,11 +137,12 @@ footer h2 {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 10px;
 
+  margin-top: 10px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
   border-radius: 10px;
 }
+
 .pro-display_details {
   margin: 0px 20px;
   text-align: center;
@@ -169,14 +173,60 @@ footer h2 {
 }
 /* Contact*/
 
+.contact-style {
+  display: flex;
+  max-width: 1280px;
+  margin: 20px auto;
+}
 .contact-decoration {
   max-width: 100%;
   margin: 30px 20px 420px 100px;
   padding: 10px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
 }
-.contact-style {
+input,
+select,
+textarea {
+  min-height: 20px;
+
+  border-radius: 5px;
+}
+
+/*women page */
+.pro-women {
   display: flex;
   max-width: 1280px;
-  margin: 20px auto;
+  margin: 50px 50px;
+}
+.pro-women > * {
+  flex: 1;
+}
+.product-w-image {
+  width: 100%;
+  box-shadow: 0px 2px 2px 2px #81f8b8;
+  border-radius: 10px;
+}
+.w-pro-display_thumbnails {
+  display: grid;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 10px;
+  box-shadow: 0px 2px 2px 2px #81f8b8;
+  border-radius: 10px;
+}
+
+.w-pro-display_details {
+  margin: 0px 20px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 2px #81f8b8;
+  border-radius: 10px;
+}
+
+/*About*/
+
+.about-paragraf {
+  min-height: 500px;
+  font-size: 20px;
+  line-height: 50px;
+  margin-bottom: 110px;
 }
