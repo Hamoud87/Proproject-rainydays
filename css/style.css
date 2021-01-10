@@ -236,9 +236,9 @@ textarea {
 }
 
 .featured {
-  display: grid;
- 
- 
+  display: flex;
+ flex-direction: column;
+  grid-template-columns:1fr;
   justify-content: center;
 }
 .featured-products {
