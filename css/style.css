@@ -103,7 +103,7 @@ h1 {
   flex: 1;
 }
 
-}
+
 .paragraf {
   max-width: 1000px;
   position: absolute;
@@ -209,16 +209,6 @@ textarea {
   display: float;
 }
 @media (max-width: 600px) {
-.welcome {
-  background-image: url("../images/banner-1.jpg");
-  background-size: cover ;
-  background-repeat: no-repeat;
-  max-width: 400px;
-  min-height: 400px;
-  margin: 10px;
-  border-radius: 10px;
-
-}
 
 .cta-button {
   width: 80px;
@@ -236,10 +226,7 @@ textarea {
 }
 
 .featured {
-  display: flex;
- flex-direction: column;
-  grid-template-columns:1fr;
-  justify-content: center;
+  display:block;
 }
 .featured-products {
   margin: 10px;
