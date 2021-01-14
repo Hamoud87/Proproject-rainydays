@@ -49,7 +49,7 @@ h1 {
 .advert1 {
   margin: 10px 0px;
 }
-/*.welcome {*/
+.welcome {
   background-image: url("../images/banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
