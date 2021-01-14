@@ -49,7 +49,7 @@ h1 {
 .advert1 {
   margin: 10px 0px;
 }
-.welcome {
+/*.welcome {*/
   background-image: url("../images/banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -307,8 +307,7 @@ footer h2 {
 @media (max-width: 600px) {
   .featured {
     display: block;
-
-    width: 320px;
+    text-align: center;
   }
   .featured-products {
     margin: 10px;
