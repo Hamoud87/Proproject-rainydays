@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainydays Home</title>
+    <title>Rainydays Men</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -12,8 +12,8 @@
         <a href="index.html"><img src="images/rainydays_logo.png" class="rainydays_logo" alt="" /></a>
         <nav>
           <ul>
-            <li><a href="index.html"><span class="active">Home</span></a></li>
-            <li><a href="men.html">Men</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html"><span class="active">Men</span> </a></li>
             <li><a href="women.html">Women</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact-us.html">Contact us</a></li>
@@ -22,13 +22,30 @@
       </header>
     
     <main>
-      <section>
-        <label for="filter">Filiter</label
-        ><select name="filter" id="filter">
+      <section class="filter-style">
+      
+        <h1>Filter</h1>
+     
+        <select name="size" id="size" class="filter-dropdown" >
+          <option value="">Size</option>
+          <option value="S">S</option>
           <option value="m">M</option>
           <option value="l">L</option>
           <option value="xxl">XXL</option>
         </select>
+           <select name="color" id="color" class="filter-dropdown">
+            <option value="">Color</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+          </select>
+              <select name="price" id="price" class="filter-dropdown">
+               <option value="">Price</option>
+              <option value=0-299>0-299</option>
+              <option value="300-599">300-599</option>
+              <option value="600-999">600-999</option>
+            </select>
+   
       </section>
       <section class="featured">
            
