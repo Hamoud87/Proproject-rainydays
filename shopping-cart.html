@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainydays Home</title>
+    <meta name="description" content="selected jacket from Rainydyas" />
+    <title>Rainydays Shopping-cart</title>
     <link href="css/style.css" rel="stylesheet" />
     <script
     src="https://kit.fontawesome.com/b318972c4d.js"
@@ -70,33 +71,73 @@
       </div>
 </section>
 <section class="shoppingcart-sec-decoration">
-  <h1>Shipment</h1>
-
-  <div class="shoppingcart-shipment-elements">
-    <input type="radio" id="standard-shipping" name="standard-shipping" value="-standard-shipping">
+    <h1>Shipment</h1>
+    <div class="shoppingcart-shipment-elements">
+       <input type="radio" id="standard-shipping" name="standard-shipping" value="standard-shipping">
+       <img src="../images/delivery-truck-icon.png" alt="">
+       <label for="standard-shipping">Standard Shipping (free)</label>
+    </div>
+       <p>Delivers at pick up point near you</p>
+    <div class="shoppingcart-shipment-elements">
+    <input type="radio" id="home-delivery" name="home-delivery" value="homedelivery">
     <img src="../images/delivery-truck-icon.png" alt="">
-    <label for="standard-shipping">Standard Shipping (free)</label>
- </div>
-      <p>Delivers at pick up point near you</p>
-
-<div class="shoppingcart-shipment-elements">
-    <input type="radio" id="shipping" name="shipping" value="shipping">
-    <img src="../images/delivery-truck-icon.png" alt="">
-    <label for="shipping">Home delivery 149kr </label>
- </div>
-      <p class="shoppingcart-shipment-elements" >Bring will contact you for a delivery appointment</p>
-      <label for="dicount">Add discount or girft code(optional)</label>
-      <input type="dicount" name="discount" id="discount" class="discount"></input>
- 
-   
-<div>
+    <label for="home-delivery">Home delivery 149kr </label>
+    </div>
+       <p class="shoppingcart-shipment-elements" >Bring will contact you for a delivery appointment</p>
+       <label for="dicount">Add discount or girft code(optional)</label>
+       <input type="dicount" name="discount" id="discount" class="discount"></input>  
+    <div>
       <a href="delivery-and-payment.html" class="cta-button cta-add-to-cart">Order Now</a>
     </div>
 </section>
-
- </main>
-    <footer>
-         
-    </footer>
+</main>
+<footer>
+  <footer class="footer">
+    <section class="footer-box">
+      <div class="footer-p">
+        <h2>Newsletter</h2>
+        <p>Subscribe to recive exiting news and exclusive offers.</p>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+        <input
+          type="submit"
+          value="Sign up"
+          class="cta-button"
+          id="cta-button-id"
+        />
+      </div>
+      <div class="footer-p">
+        <h2>Rainydays</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact-us.html">Contact-us</a></li>
+          <li><a href="terms-of-purchase.html">Terms of purchase</a></li>
+          <li><a href="terms-of-purchase.html">Privacy policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-p">
+        <h2>Contact</h2>
+        <ul>
+          <li>Sentrumsvegen 75</li>
+          <li>3550 Gol_Norway</li>
+          <li>Phone: +4747184444</li>
+          <li>Info@rainydays.no</li>
+          <li>Org nr: 121212121</li>
+        </ul>
+      </div>
+      <div class="footer-p">
+        <h2>Safe Purchase</h2>
+        <ul>
+          <li>Safe payment</li>
+          <li>Fast delivery</li>
+          <li>Full return policy</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <p>Copy right</p>
+    </section>
+  </footer>  
+</footer>
   </body>
 </html>

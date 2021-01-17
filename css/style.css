@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Helvetica, sans-serif;
-  scr: url();
-}
-
 body {
   margin: 0%;
 }
@@ -37,13 +32,14 @@ nav a:hover {
 .active {
   color: #707070;
 }
+
 #hamburger-menu {
   display: none;
 }
 
 h1 {
   font-family: Helvetica, sans-serif;
-  color: #73a09c;
+  color: #0b3a40;
   font-size: 25px;
 }
 h2 {
@@ -62,6 +58,9 @@ h2 {
   margin: 10px;
   border-radius: 10px;
 }
+.banner {
+  width: 100%;
+}
 
 .cta-button {
   width: 100px;
@@ -75,7 +74,7 @@ h2 {
 }
 
 .cta-add-to-cart {
-  background-color: #73a09c;
+  background-color: #0b3a40;
   text-align: center;
 }
 .cta-sing-up {
@@ -242,20 +241,13 @@ footer h2 {
 }
 
 /* Shopping-cart Style */
-.header-icons {
-  width: 30px;
-  float: right;
-
-  padding-right: 10px;
-  margin: 20px;
-}
 
 .shoppingcart-style {
   display: flex;
 }
 .shoppingcart-sec-decoration {
   max-width: 100%;
-  margin: 30px auto;
+  margin: 30px auto 450px auto;
   padding: 10px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
   border-radius: 10px;
@@ -329,7 +321,7 @@ footer h2 {
 /* Purchase Page */
 .purchase-main {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 30px auto 150px auto;
 }
 .purchase-conformation {
   text-align: center;
@@ -448,17 +440,16 @@ footer h2 {
   .shoppingcart-style {
     display: block;
   }
-
+  .shoppingcart-sec-decoration {
+    max-width: 100%;
+    margin: 30px auto 0px auto;
+  }
   /* Delivery-Payment */
   .delivery {
     display: block;
   }
-
-  .delivery-form {
-    width: 200px;
-    min-height: 25px;
-    border: grey solid 1px;
-    border-radius: 5px;
+  .delivery-section textarea {
+    width: 300px;
   }
   /* Purchase Success */
   .purchase-section {
