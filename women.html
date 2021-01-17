@@ -8,132 +8,155 @@
   </head>
   <body>
     <header class="top-header">
-      <a href="index.html"><img src="images/rainydays_logo.png" class="rainydays_logo" alt="" /></a>
+      <a href="index.html"
+        ><img src="images/rainydays_logo.png" class="rainydays_logo" alt=""
+      /></a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html"><span class="active">Women</span> </a></li>
+          <li>
+            <a href="men.html">Men</a>
+          </li>
+          <li>
+            <a href="women.html"><span class="active">Women</span></a>
+          </li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact-us.html">Contact us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <a href="men.html"><img src="images/banner-1.jpg" class="advert1" alt="" /></a>
-      <section class="featured">
-           
-            <div class="featured-products">
-              <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a>
-            
-                <h1 class="featured-products-info-col" >Rainydays </h1>
-                
-                <p class="featured-products-info-col" >Wind Jackets-Navy/blue</p>
-                <p class="featured-products-info-col" >699kr</p>
-          
-                </div>
-                <div class="featured-products" >
-               <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a> 
-               <div class="featured-products-info">
-                <h1 class="featured-products-info-col">Rainydays </h1>
-                <p class="featured-products-info-col">799kr</p>
-                <p class="featured-products-info-col">Outdoor Jackets-Blue</p>
-                
-                </div> 
-                </div>
-                <div class="featured-products" >
-                  <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a>
-                <h1 class="featured-products-info-col" >Rainydays</h1>
-                <p class="featured-products-info-col" >Rain Jackets-Green</p>
-                <p class="featured-products-info-col">499kr</p>
-                </div>
-                <div class="featured-products" >
-                  <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a>
-                <h1 class="featured-products-info-col">Rainydays</h1>
-                <p class="featured-products-info-col">Rain Jackets-Green</p>
-                <p class="featured-products-info-col">499kr</p>
-                </div>
-      </section>  
-      <a href="men.html"><img src="images/banner-1.jpg" class="advert1" alt="" /></a>
-      <section class="featured-women">
-           
-            <div class="featured-products-women">
-              <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a>
-            
-                <h1 class="featured-products-info-col" >Rainydays </h1>
-                
-                <p class="featured-products-info-col" >Wind Jackets-Navy/blue</p>
-                <p class="featured-products-info-col" >699kr</p>
-          
-                </div>
-                <div class="featured-products-women" >
-               <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a> 
-               <div class="featured-products-info">
-                <h1 class="featured-products-info-col">Rainydays </h1>
-                <p class="featured-products-info-col">799kr</p>
-                <p class="featured-products-info-col">Outdoor Jackets-Blue</p>
-                
-                </div> 
-                </div>
-                <div class="featured-products-women" >
-                  <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a>
-                <h1 class="featured-products-info-col" >Rainydays</h1>
-                <p class="featured-products-info-col" >Rain Jackets-Green</p>
-                <p class="featured-products-info-col">499kr</p>
-                </div>
-                <div class="featured-product-women" >
-                  <a href="product-show.html"><img src="images/products-specific2.jpg" class= "image1" alt=""/></a>
-                <h1 class="featured-products-info-col">Rainydays</h1>
-                <p class="featured-products-info-col">Rain Jackets-Green</p>
-                <p class="featured-products-info-col">499kr</p>
-                </div>
-      </section>       
+      <section class="filter-style">
+        <h1>Filter</h1>
+        <select name="size" id="size" class="filter-dropdown">
+          <option value="">Size</option>
+          <option value="S">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <select name="color" id="color" class="filter-dropdown">
+          <option value="">Color</option>
+          <option value="black">Black</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+        </select>
+        <select name="price" id="price" class="filter-dropdown">
+          <option value="">Price</option>
+          <option value="0-299">0-299</option>
+          <option value="300-599">300-599</option>
+          <option value="600-999">600-999</option>
+        </select>
+      </section>
+      <section class="test-section">
+        <section class="section-featured">
+          <div class="featured-products">
+            <a href="specific-product.html"
+              ><img src="images/product-image1.jpg" class="image1" alt=""
+            /></a>
+            <div class="featured-products-detail">
+              <h2>Rainydays</h2>
+              <p>699kr</p>
+              <p>Wind Jackets-Navy/blue</p>
+            </div>
+          </div>
+          <div class="featured-products">
+            <a href="specific-product.html"
+              ><img src="images/product-image16.jpg" class="image1" alt=""
+            /></a>
+            <div class="featured-products-detail">
+              <h2>Rainydays</h2>
+              <p>699kr</p>
+              <p>Wind Jackets-Navy/blue</p>
+            </div>
+          </div>
+          <div class="featured-products">
+            <a href="specific-product.html"
+              ><img src="images/product-image17.jpg" class="image1" alt=""
+            /></a>
+            <div class="featured-products-detail">
+              <h2>Rainydays</h2>
+              <p>699kr</p>
+              <p>Wind Jackets-Navy/blue</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-featured">
+          <div class="featured-products">
+            <a href="specific-product.html"
+              ><img src="images/product-image18.jpg" class="image1" alt=""
+            /></a>
+            <div class="featured-products-detail">
+              <h2>Rainydays</h2>
+              <p>699kr</p>
+              <p>Wind Jackets-Navy/blue</p>
+            </div>
+          </div>
+          <div class="featured-products">
+            <a href="specific-product.html"
+              ><img src="images/product-image19.jpg" class="image1" alt=""
+            /></a>
+            <div class="featured-products-detail">
+              <h2>Rainydays</h2>
+              <p>699kr</p>
+              <p>Wind Jackets-Navy/blue</p>
+            </div>
+          </div>
+          <div class="featured-products">
+            <a href="specific-product.html"
+              ><img src="images/product-image20.jpg" class="image1" alt=""
+            /></a>
+            <div class="featured-products-detail">
+              <h2>Rainydays</h2>
+              <p>699kr</p>
+              <p>Wind Jackets-Navy/blue</p>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
-    <footer class="footer-women">
-         <section>
-           <a href="index.html"><img src="images/rainyDays_Logo.png" class="footer-logo" alt="">    </a>
-          </section>
-           <section class= "footer-box-women">
-                  <div class="footer-p" >
-                      <h2>Newsletter</h2>
-                      <p>Subscribe to recive exiting news and exclusive offers.</p>
-                      <label for="email">Email</label>
-                      <input type="text" name="email" id="email">
-                       <input type="submit" value="send" class="cta-button" />
-                      
-                  </div>
-                  <div class="footer-p" >
-                    <h2>Rainydays</h2>
-                    <ul>
-                      <li>About us</li>
-                      <li>Contact us</li>
-                      <li>Terms of purchase</li>
-                      <li>Privacy policies</li>
-                    </u>
-                  </div>
-                  <div class="footer-p">
-                    <h2>Contact </h2>
-                    <ul>
-                      <li>Sentrumsvegen 75</li>
-                      <li>3550 Gol_Norway</li>
-                      <li>Phone: +4747184444</li>
-                      <li>Info@rainydays.no</li>
-                      <li>Org nr: 121212121</li>
-                    </u>
-                  </div>
-                  <div class="footer-p">
-                    <h2>Safe Purchase</h2>
-                    <ul>
-                      <li>Safe payment</li>
-                      <li>Fast delivery</li>
-                      <li>Full return policy</li>
-                    </ul>
-                      </div>
-                  </section>
-                         <div class="copyright">copyright</div>
-
-                  </section>
-
+    <footer>
+      <footer class="footer">
+        <section class="footer-box">
+          <div class="footer-p">
+            <h2>Newsletter</h2>
+            <p>Subscribe to recive exiting news and exclusive offers.</p>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+            <a href="delivery-and-payment.html" class="cta-button"> Sign Up</a>
+          </div>
+          <div class="footer-p">
+            <h2>Rainydays</h2>
+            <ul>
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Terms of purchase</li>
+              <li>Privacy policies</li>
+            </ul>
+          </div>
+          <div class="footer-p">
+            <h2>Contact</h2>
+            <ul>
+              <li>Sentrumsvegen 75</li>
+              <li>3550 Gol_Norway</li>
+              <li>Phone: +4747184444</li>
+              <li>Info@rainydays.no</li>
+              <li>Org nr: 121212121</li>
+            </ul>
+          </div>
+          <div class="footer-p">
+            <h2>Safe Purchase</h2>
+            <ul>
+              <li>Safe payment</li>
+              <li>Fast delivery</li>
+              <li>Full return policy</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <p>Copy right</p>
+        </section>
+      </footer>
     </footer>
   </body>
 </html>

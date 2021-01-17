@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainydays Home</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/rainydays_logo.png" class="rainydays_logo" alt="" /></a>
+    
+      <a href="index.html"><img src="images/liked-icon.png" class="header-icons"  alt="" /></a>
+      <a href="index.html"><img src="images/profile-icon.svg" class="header-icons" alt="" /></a>
+   
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="active">Home</span></a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="shoppingcart-style">
+      <section class="shoppingcart-sec-decoration">
+         <h1>Shopping cart</h1> 
+         <div class="shoppingcart-elements">
+       <div >
+          <img src="../images/test.png" alt="">
+      </div>
+      <div>
+         <p>Rainydays</p>
+         <p>Rain Jacket</p>
+         <p>Color: Yellow</p>
+         <p>Sixe: XL</p>
+         <div class="remove-icon">
+          <img src="../images/metro-bin-icon.png" alt="">
+         <p>Remove</p>
+        </div>
+        </div>
+        <div>
+          <select name="size" id="size" class="filter-dropdown">
+           
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+</section>
+<section class="shoppingcart-sec-decoration">
+  <h1>Shipment</h1>
+
+  <div class="shoppingcart-shipment-elements">
+    <input type="radio" id="standard-shipping" name="standard-shipping" value="-standard-shipping">
+    <img src="../images/delivery-truck-icon.png" alt="">
+    <label for="standard-shipping">Standard Shipping (free)</label>
+ </div>
+      <p>Delivers at pick up point near you</p>
+
+<div class="shoppingcart-shipment-elements">
+    <input type="radio" id="shipping" name="shipping" value="shipping">
+    <img src="../images/delivery-truck-icon.png" alt="">
+    <label for="shipping">Home delivery 149kr </label>
+ </div>
+      <p class="shoppingcart-shipment-elements" >Bring will contact you for a delivery appointment</p>
+      <label for="dicount">Add discount or girft code(optional)</label>
+      <input type="dicount" name="discount" id="discount" class="discount"></input>
+ 
+   
+<div>
+      <a href="delivery-and-payment.html" class="cta-button cta-add-to-cart">Order Now</a>
+    </div>
+</section>
+
+ </main>
+    <footer>
+         
+    </footer>
+  </body>
+</html>

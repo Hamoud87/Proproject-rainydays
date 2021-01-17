@@ -1,10 +1,6 @@
 @font-face {
-  font-famaily: "Lucida Grande";
-}
-h1,
-h2,
-h3 {
-  font-family: "Lucida Grande", sans-serif;
+  font-family: Helvetica, sans-serif;
+  scr: url();
 }
 
 body {
@@ -20,6 +16,7 @@ header {
 }
 .rainydays_logo {
   max-width: 100px;
+  margin-left: 50px;
 }
 
 nav li {
@@ -30,7 +27,7 @@ nav li {
 }
 
 nav a {
-  color: #73a09c;
+  color: #0b3a40;
   text-decoration: none;
   padding: 20px;
 }
@@ -38,13 +35,20 @@ nav a:hover {
   text-decoration: underline;
 }
 .active {
-  color: #5ecb90;
+  color: #707070;
+}
+#hamburger-menu {
+  display: none;
 }
 
 h1 {
   font-family: Helvetica, sans-serif;
   color: #73a09c;
   font-size: 25px;
+}
+h2 {
+  color: black;
+  font-size: 20px;
 }
 .advert1 {
   margin: 10px 0px;
@@ -53,6 +57,7 @@ h1 {
   background-image: url("../images/banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: center;
   min-height: 400px;
   margin: 10px;
   border-radius: 10px;
@@ -62,41 +67,51 @@ h1 {
   width: 100px;
   background-color: #0367a6;
   border-radius: 20px;
-  border: white;
   color: white;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
   margin: 20px auto;
-}
-.cta-add-to-cart {
-  background-color: #73a09c;
+  font-size: 15px;
 }
 
-.featured {
+.cta-add-to-cart {
+  background-color: #73a09c;
+  text-align: center;
+}
+.cta-sing-up {
+  margin: 40px 20px;
+}
+
+.section-featured {
   display: flex;
-  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 30px;
+
   justify-content: center;
 }
 .featured-products {
-  margin: 20px;
-  border-radius: 10px 10px;
-  box-shadow: 2px 2px #81f8b8;
-}
-.featured-products-info {
-  display: grid;
-  grid-template-columns: 85% 20%;
-  padding: 2px 2px 2px 8px;
-}
-.featured-products-info-col {
-  margin: 0%;
+  width: 310px;
+  height: 490px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 0px#5ecb90;
 }
 
 .image1 {
   max-width: 300px;
   height: 400px;
+  margin: 0px 10px;
   border-radius: 10px 10px 0px 0px;
 }
 
+.featured-products-detail {
+  display: grid;
+  grid-template-columns: 85% 25%;
+  padding: 4px 3px 0px 10px;
+}
+.featured-products-detail h2,
+p {
+  margin: 0px 0px 0px 0px;
+}
 .footer-box {
   display: flex;
 }
@@ -130,6 +145,10 @@ footer ul {
 footer h2 {
   margin: 5px 25px;
 }
+#cta-button-id {
+  float: right;
+  margin-right: 20px;
+}
 
 /* Specific product Page */
 .pro-display {
@@ -146,10 +165,10 @@ footer h2 {
   border-radius: 10px;
 }
 .pro-display_thumbnails {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+
   margin-top: 10px;
   box-shadow: 0px 2px #81f8b8;
   border-radius: 10px;
@@ -171,7 +190,7 @@ footer h2 {
   height: 30px;
   border-color: #81f8b8;
   color: green;
-  margin: 0px 10px;
+  margin: 20px 10px;
 }
 
 /*About*/
@@ -199,9 +218,10 @@ footer h2 {
 
 .contact-style {
   display: flex;
+  max-width: 100%;
 }
 .contact-decoration {
-  margin: 30px 10px 420px 100px;
+  margin: 30px auto 420px;
   padding: 10px 50px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
 }
@@ -221,18 +241,43 @@ footer h2 {
   display: float;
 }
 
-/* Shopping cart Style */
+/* Shopping-cart Style */
+.header-icons {
+  width: 30px;
+  float: right;
+
+  padding-right: 10px;
+  margin: 20px;
+}
+
 .shoppingcart-style {
   display: flex;
-  max-width: 1280px;
-  margin: 20px auto;
 }
 .shoppingcart-sec-decoration {
   max-width: 100%;
-  margin: 30px 10px 420px 100px;
+  margin: 30px auto;
   padding: 10px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
+  border-radius: 10px;
 }
+.shoppingcart-elements {
+  display: flex;
+}
+.shoppingcart-elements div {
+  margin: 10px 20px 50px 10px;
+}
+
+.remove-icon {
+  padding: 10px 0px;
+}
+.shoppingcart-shipment-elements {
+  margin: 30px 0px;
+}
+
+.shoppingcart-shipment-elements img {
+  width: 40px;
+}
+
 /* Delivery and Payment page*/
 .delivery {
   display: flex;
@@ -254,20 +299,37 @@ footer h2 {
   border-radius: 5px;
   margin: 5px 0px;
 }
+.delivery-section textarea {
+  border-radius: 10px;
+}
 .delivery-order {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
   background-color: #f2f2f2;
   border-radius: 10px;
 }
 .delivery-order p {
   margin: 10px auto;
 }
+.delivery-section p {
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0px 2px 2px 2px #81f8b8;
+  border-radius: 10px;
+}
+.payment-card-icons img {
+  width: 40px;
+  height: 30px;
+}
+.payment-card-icons {
+  display: flex;
+}
 
 /* Purchase Page */
 .purchase-main {
   max-width: 800px;
-  margin: 10px auto;
+  margin: 30px auto;
 }
 .purchase-conformation {
   text-align: center;
@@ -278,12 +340,19 @@ footer h2 {
   box-shadow: 0px 2px 2px 2px #81f8b8;
   padding: 10px;
 }
+.purchase-section a {
+  margin-left: 70px;
+}
+.purchase-order-elements {
+  display: flex;
+}
 
 .purchase-order {
   margin: auto;
   background-color: #f2f2f2;
   border-radius: 10px;
   padding: 40px;
+  line-height: 35px;
 }
 
 .purchase-order-summery {
@@ -291,10 +360,10 @@ footer h2 {
   grid-template-columns: repeat(2, 1fr);
 }
 .purchase-order-summery div {
-  padding-left: 10px;
   margin: 10px;
 }
-.purchase-order-summery img {
+.purchase-order-summery img,
+.shoppingcart-sec-decoration img {
   border-radius: 10px;
 }
 .purchase-order div {
@@ -305,6 +374,40 @@ footer h2 {
 }
 
 @media (max-width: 600px) {
+  header {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  nav {
+    display: none;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    z-index: 1000;
+  }
+  nav li {
+    display: block;
+  }
+  nav a {
+    display: block;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px #81f8b8;
+    box-shadow: ;
+    font-size: 20px;
+    margin: 3px 2px;
+    padding: 0%;
+  }
+
   .featured {
     display: block;
     text-align: center;
@@ -361,5 +464,25 @@ footer h2 {
   }
   .copyright {
     margin: 0px 0px 20px 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .test-section {
+    display: flex;
+    justify-content: center;
+  }
+  .section-featured {
+    display: block;
+  }
+  .featured-products {
+    margin-bottom: 30px;
+  }
+  .footer ul {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .top-header ul {
+    margin: 0px;
+    padding: 0px;
   }
 }
