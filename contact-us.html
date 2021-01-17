@@ -5,21 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainydays Contact us</title>
     <link href="css/style.css" rel="stylesheet" />
+    <script
+    src="https://kit.fontawesome.com/b318972c4d.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
     <header class="top-header">
       <a href="index.html"
-        ><img src="images/rainydays_logo.png" class="rainydays_logo" alt=""
+        ><img
+          src="images/rainydays-logo.png"
+          class="rainydays_logo"
+          alt="rainydays logo image"
       /></a>
+     
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+      </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="index.html"><span class="active">Home</span></a>
+          </li>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
           <li><a href="about.html">About</a></li>
-          <li>
-            <a href="contact-us.html"><span class="active">Contact us</span></a>
-          </li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          
+            <a href=""><img src="images/profile-icon.png" alt="" /></a>
+            <a href=""> <img src="images/liked-icon.png" alt="" /></a>
+            <a href="shopping-cart.html">
+              <img src="images/shopping-bag-icon.png" alt=""
+            /></a>
         </ul>
       </nav>
     </header>
@@ -97,27 +114,27 @@
         <p>Org nr:121212121</p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <section class="footer-box">
         <div class="footer-p">
           <h2>Newsletter</h2>
           <p>Subscribe to recive exiting news and exclusive offers.</p>
           <label for="email">Email</label>
           <input type="text" name="email" id="email" />
-          <div>
-            <a href="product-show.html" class="cta-button cta-sing-up">
-              Sign up</a
-            >
-          </div>
+          <input
+            type="submit"
+            value="Sign up"
+            class="cta-button"
+            id="cta-button-id"
+          />
         </div>
-
         <div class="footer-p">
           <h2>Rainydays</h2>
           <ul>
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Terms of purchase</li>
-            <li>Privacy policies</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact-us</a></li>
+            <li><a href="terms-of-purchase.html">Terms of purchase</a></li>
+            <li><a href="terms-of-purchase.html">Privacy policies</a></li>
           </ul>
         </div>
         <div class="footer-p">
@@ -140,7 +157,7 @@
         </div>
       </section>
       <section>
-        <div class="copyright">copyright</div>
+        <p>Copy right</p>
       </section>
     </footer>
   </body>

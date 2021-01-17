@@ -373,7 +373,7 @@ footer h2 {
   text-align: right;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   header {
     display: flex;
     text-align: center;
@@ -392,7 +392,7 @@ footer h2 {
     display: none;
     position: fixed;
     top: 30px;
-    right: 10px;
+    right: 0px;
     z-index: 1000;
   }
   nav li {
@@ -402,9 +402,14 @@ footer h2 {
     display: block;
     background-color: #f2f2f2;
     box-shadow: 2px 2px #81f8b8;
-    box-shadow: ;
+
     font-size: 20px;
     margin: 3px 4px;
+    padding: 15px;
+  }
+  .test-section {
+    display: block;
+    justify-content: center;
   }
 
   .featured {
@@ -435,10 +440,41 @@ footer h2 {
     display: flex;
     flex-direction: column;
   }
-  .footer-box > * {
-    flex: 1;
+  /* specific-product */
+  .pro-display {
+    display: block;
+    margin: 20px auto;
+  }
+  /* shoppingcart */
+  .shoppingcart-style {
+    display: block;
   }
 
+  /* Delivery-Payment */
+  .delivery {
+    display: block;
+  }
+
+  .delivery-form {
+    width: 200px;
+    min-height: 25px;
+    border: grey solid 1px;
+    border-radius: 5px;
+  }
+  /* Purchase Success */
+  .purchase-section {
+    display: block;
+  }
+  /* Contact us */
+  .contact-style {
+    display: block;
+  }
+  .contact-decoration {
+    margin: 20px auto;
+  }
+  .map-image {
+    width: 250px;
+  }
   .paragraf {
     max-width: 1000px;
     position: absolute;
@@ -465,8 +501,26 @@ footer h2 {
     margin: 0px 0px 20px 30px;
   }
 }
-@media (max-width: 1100px) {
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  /* Home page */
   .test-section {
+    display: flex;
+    justify-content: center;
+  }
+  /* Contact us */
+  .contact-style {
+    display: block;
+  }
+  .contact-decoration {
+    margin: 30px auto;
+  }
+  .map-image {
+    max-width: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .sections-wrapper {
     display: flex;
     justify-content: center;
   }
@@ -479,9 +533,5 @@ footer h2 {
   .footer ul {
     text-align: left;
     padding-left: 10px;
-  }
-  .top-header ul {
-    margin: 0px;
-    padding: 0px;
   }
 }
