@@ -45,9 +45,7 @@ h2 {
   color: black;
   font-size: 20px;
 }
-.advert1 {
-  margin: 10px 0px;
-}
+
 .welcome {
   background-image: url("../images/banner-1.jpg");
   background-size: cover;
@@ -210,7 +208,6 @@ footer h2 {
   text-align: center;
   line-height: 30px;
   font-size: 20px;
-
   margin: 30px auto;
   padding: 10px;
   box-shadow: 0px 3px 3px 3px #81f8b8;
@@ -249,7 +246,7 @@ footer h2 {
 }
 .shoppingcart-sec-decoration {
   max-width: 100%;
-  margin: 30px auto 450px auto;
+  margin: 30px auto 10px auto;
   padding: 10px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
   border-radius: 10px;
@@ -366,7 +363,9 @@ footer h2 {
 .purchase-order-total {
   text-align: right;
 }
-
+.favourite {
+  text-align: center;
+}
 @media (max-width: 599px) {
   header {
     display: flex;
@@ -494,7 +493,7 @@ footer h2 {
   }
 }
 
-@media (min-width: 600px) and (max-width: 1100px) {
+@media (min-width: 600px) and (max-width: 1199px) {
   /* Home page */
   .test-section {
     display: flex;
