@@ -367,6 +367,13 @@ footer h2 {
 .favourite {
   text-align: center;
 }
+/* Favorite */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
 @media (max-width: 599px) {
   header {
     display: flex;
