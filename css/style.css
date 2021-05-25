@@ -6,12 +6,10 @@ header {
   text-align: center;
 }
 .top-header {
-  background-color: #f2f2f2;
-  box-shadow: 0px 2px #81f8b8;
+  box-shadow: 0px 1px #81f8b8;
 }
 .rainydays_logo {
   max-width: 100px;
-  margin-left: 50px;
 }
 
 nav li {
@@ -79,24 +77,31 @@ h2 {
   margin: 40px 20px;
 }
 
-.section-featured {
-  display: flex;
-  margin-bottom: 30px;
+.section-featured,
+.section-men,
+.section-women,
+.section-favorite {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 30px;
 
-  justify-content: center;
+  justify-items: center;
+}
+.featured-products:hover {
+  box-shadow: 5px 5px 5px #bebebe, -10px -10px 40px #ffffff;
+  transition: 0.3s;
 }
 .featured-products {
-  width: 310px;
+  width: 280px;
   height: 490px;
-  margin: 0px 10px;
+  margin: 20px 5px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 0px#5ecb90;
 }
 
 .image1 {
-  max-width: 300px;
+  max-width: 280px;
   height: 400px;
-  margin: 0px 10px;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -109,8 +114,19 @@ h2 {
 p {
   margin: 0px 0px 0px 0px;
 }
+.company-offers {
+  display: flex;
+  margin: 5px;
+  background-color: #dae1eb;
+  justify-content: center;
+  border-radius: 5px;
+}
+.company-offers p {
+  padding: 30px 50px;
+}
 .footer-box {
   display: flex;
+  background-color: #dde1e7;
 }
 .footer-box > * {
   flex: 1;
@@ -132,12 +148,13 @@ p {
   padding-left: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: #f2f2f2;
-  box-shadow: 2px 2px #81f8b8;
 }
 footer ul {
   padding: 0px auto;
   line-height: 30px;
+}
+footer ul li a {
+  text-decoration: none;
 }
 footer h2 {
   margin: 5px 25px;
@@ -282,6 +299,7 @@ footer h2 {
   margin: 20px auto;
   padding: 10px;
   box-shadow: 0px 2px 2px 2px #81f8b8;
+  border-radius: 5px;
 }
 
 .delivery-form {
@@ -368,13 +386,6 @@ footer h2 {
 .favourite {
   text-align: center;
 }
-/* Favorite */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-}
-
 @media (max-width: 599px) {
   header {
     display: flex;
@@ -399,8 +410,8 @@ footer h2 {
   nav {
     display: none;
     position: fixed;
-    top: 30px;
-    right: 0px;
+    top: 25px;
+    width: 130%;
     z-index: 1000;
   }
   nav li {
@@ -410,13 +421,12 @@ footer h2 {
     display: block;
     background-color: #f2f2f2;
     box-shadow: 2px 2px #81f8b8;
-    font-size: 15px;
-    margin: 1px 4px;
-    padding: 5px;
+    font-size: 20px;
+
+    padding: 20px;
   }
-  .test-section {
-    display: block;
-    justify-content: center;
+  .icons {
+    max-width: 50px;
   }
 
   .featured {
@@ -506,40 +516,5 @@ footer h2 {
   }
   .copyright {
     margin: 0px 0px 20px 30px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1199px) {
-  /* Home page */
-  .test-section {
-    display: flex;
-    justify-content: center;
-  }
-  /* Contact us */
-  .contact-style {
-    display: block;
-  }
-  .contact-decoration {
-    margin: 30px auto;
-  }
-
-  .map-image {
-    max-width: 200px;
-  }
-}
-@media (max-width: 1200px) {
-  .sections-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  .section-featured {
-    display: block;
-  }
-  .featured-products {
-    margin-bottom: 30px;
-  }
-  .footer ul {
-    text-align: left;
-    padding-left: 10px;
   }
 }
